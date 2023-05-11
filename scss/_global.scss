@@ -85,6 +85,16 @@ h6 {
   overflow-wrap: break-word;
 }
 
+p {
+  font-size: 1.5rem;
+}
+
+a:link,
+a:visited {
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
 #root,
 #__next {
   isolation: isolate;
