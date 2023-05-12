@@ -1,10 +1,33 @@
 @use "../../scss/index.scss" as *;
 
 .hero {
-  background-color: #000;
+  background-color: $black;
+
+  &:nth-child(odd) {
+    background-color: $white;
+
+    h1 {
+      color: $black;
+    }
+
+    p {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    a:link,
+    a:visited {
+      color: $black;
+    }
+  }
 
   &__content {
+    max-width: 37.5rem;
+    margin: 0 auto;
     padding: 3rem;
+
+    div {
+      display: inline-block;
+    }
 
     h1 {
       color: $white;
@@ -16,6 +39,7 @@
     p {
       color: $opaque-grey;
       margin-bottom: 2rem;
+      line-height: 1.6;
     }
 
     a:link,
@@ -24,7 +48,6 @@
       text-transform: uppercase;
       letter-spacing: 1px;
       font-weight: bold;
-      width: 100%;
 
       display: flex;
       align-items: center;

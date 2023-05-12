@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Header from "../components/Header/Header";
-import Hero from "../components/Hero/Hero";
+import HeroHome from "../components/Hero/HeroHome";
 export default function Home() {
   return (
     <>
@@ -12,7 +12,7 @@ export default function Home() {
         <title>Photoshop Gallery</title>
       </Head>
       <Header />
-      <Hero />
+      <HeroHome />
     </>
   );
 }
