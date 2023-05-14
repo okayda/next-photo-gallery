@@ -1,6 +1,7 @@
 import Head from "next/head";
-import Header from "../components/Header/Header";
 import HeroHome from "../components/Hero/HeroHome";
+import BoxsGrid from "../components/BoxsGrid/BoxsGrid";
+
 export default function Home() {
   return (
     <>
@@ -11,8 +12,8 @@ export default function Home() {
         />
         <title>Photoshop Gallery</title>
       </Head>
-      <Header />
       <HeroHome />
+      <BoxsGrid />
     </>
   );
 }
