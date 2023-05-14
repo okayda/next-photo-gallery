@@ -1,0 +1,29 @@
+@use "../../scss/index.scss" as *;
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 4.2rem;
+  padding: 10rem 0;
+  max-width: 31rem;
+  margin: 0 auto;
+
+  div {
+    text-align: center;
+
+    img {
+      width: 6.4rem;
+      height: 6.4rem;
+      margin: 0 auto 3rem;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1.8rem;
+    }
+
+    p {
+      color: $opaque-black;
+    }
+  }
+}
