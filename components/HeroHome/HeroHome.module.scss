@@ -25,6 +25,10 @@
     margin: 0 auto;
     padding: 3rem;
 
+    @include l-mobile {
+      max-width: 40rem;
+    }
+
     div {
       display: inline-block;
     }
@@ -40,6 +44,10 @@
       color: $opaque-grey;
       margin-bottom: 2rem;
       line-height: 1.6;
+
+      @include l-mobile {
+        margin-bottom: 3.6rem;
+      }
     }
 
     a:link,
