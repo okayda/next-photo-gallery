@@ -1,5 +1,5 @@
 import Head from "next/head";
-import HeroHome from "../components/Hero/HeroHome";
+import HeroHome from "../components/HeroHome/HeroHome";
 import BoxsGrid from "../components/BoxsGrid/BoxsGrid";
 import HomeFeature from "../components/HomeFeature/HomeFeature";
 

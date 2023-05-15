@@ -1,5 +1,6 @@
 @mixin l-mobile() {
-  @media only screen and (min-width: 500px) {
+  //500px
+  @media only screen and (min-width: 31.25em) {
     @content;
   }
 }

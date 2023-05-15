@@ -21,12 +21,12 @@
   }
 
   &__content {
-    max-width: 37.5rem;
+    max-width: 40rem;
     margin: 0 auto;
     padding: 3rem;
 
     @include l-mobile {
-      max-width: 40rem;
+      max-width: 46rem;
     }
 
     div {
@@ -35,9 +35,13 @@
 
     h1 {
       color: $white;
-      font-size: 2.8rem;
+      font-size: 3rem;
       line-height: 1.4;
       margin-bottom: 2rem;
+
+      @include l-mobile {
+        font-size: 3.2rem;
+      }
     }
 
     p {
