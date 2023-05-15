@@ -1,12 +1,32 @@
 @use "../../scss/index.scss" as *;
 
 .feature {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+
   gap: 4.2rem;
   padding: 10rem 0;
   max-width: 31rem;
   margin: 0 auto;
+
+  @include tablet() {
+    max-width: 60rem;
+    grid-template-columns: 1fr 1fr;
+
+    div:last-child {
+      grid-column: 1 / -1;
+      max-width: 30rem;
+      margin: 0 auto;
+    }
+  }
+
+  @include m-tablet() {
+    max-width: 80rem;
+
+    div:last-child {
+      max-width: 40rem;
+    }
+  }
 
   div {
     text-align: center;

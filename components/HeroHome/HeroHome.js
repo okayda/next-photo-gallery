@@ -8,7 +8,11 @@ const HeroHome = function () {
     <>
       {HomeData.map((data, i) => (
         <section key={i} className={classes.hero}>
-          <img src={data.imgMobile} alt={data.alt} />
+          <picture>
+            <source srcSet={data.imgTablet} media="(min-width: 700px)" />
+
+            <img src={data.imgMobile} alt={data.alt} />
+          </picture>
 
           <div className={classes.hero__content}>
             <h1>{data.title}</h1>

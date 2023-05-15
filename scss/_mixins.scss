@@ -6,8 +6,15 @@
 }
 
 @mixin tablet() {
-  // 800px
-  @media only screen and (min-width: 50em) {
+  // 700px
+  @media only screen and (min-width: 700px) {
+    @content;
+  }
+}
+
+@mixin m-tablet() {
+  // 840px
+  @media only screen and (min-width: 840px) {
     @content;
   }
 }

@@ -3,6 +3,17 @@
 .hero {
   background-color: $black;
 
+  @include tablet() {
+    display: flex;
+    align-items: center;
+
+    &:nth-child(odd) {
+      picture {
+        order: 2;
+      }
+    }
+  }
+
   &:nth-child(even) {
     background-color: $white;
 
@@ -25,8 +36,16 @@
     margin: 0 auto;
     padding: 3rem;
 
-    @include l-mobile {
+    @include l-mobile() {
       max-width: 46rem;
+    }
+
+    @include tablet() {
+      max-width: 50rem;
+    }
+
+    @include m-tablet() {
+      max-width: 54rem;
     }
 
     div {
@@ -41,6 +60,14 @@
 
       @include l-mobile {
         font-size: 3.2rem;
+      }
+
+      @include tablet {
+        font-size: 4rem;
+      }
+
+      @include m-tablet() {
+        margin-bottom: 3rem;
       }
     }
 
