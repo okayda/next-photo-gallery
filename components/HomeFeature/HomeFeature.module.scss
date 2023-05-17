@@ -28,6 +28,17 @@
     }
   }
 
+  @include desktop() {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 140rem;
+    padding: 10rem 2.6rem;
+
+    div:last-child {
+      grid-column: auto;
+      max-width: none;
+    }
+  }
+
   div {
     text-align: center;
 
@@ -40,10 +51,18 @@
     h3 {
       font-size: 1.8rem;
       margin-bottom: 1.8rem;
+
+      @include desktop() {
+        font-size: 1.9rem;
+      }
     }
 
     p {
       color: $opaque-black;
+
+      @include desktop() {
+        font-size: 1.6rem;
+      }
     }
   }
 }

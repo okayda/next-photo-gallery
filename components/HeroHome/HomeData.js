@@ -17,7 +17,7 @@ export const HomeData = [
   {
     imgMobile: imgMobile1,
     imgTablet: imgTablet1,
-    imgDesktop1: imgDesktop1,
+    imgDesktop: imgDesktop1,
     alt: "Photographer",
     arrow: whiteArrow,
 
@@ -29,7 +29,7 @@ export const HomeData = [
   {
     imgMobile: imgMobile2,
     imgTablet: imgTablet2,
-    imgDesktop1: imgDesktop2,
+    imgDesktop: imgDesktop2,
     alt: "Laptop",
     arrow: blackArrow,
 
@@ -41,7 +41,7 @@ export const HomeData = [
   {
     imgMobile: imgMobile3,
     imgTablet: imgTablet3,
-    imgDesktop1: imgDesktop3,
+    imgDesktop: imgDesktop3,
     alt: "DLSR Camera",
     arrow: whiteArrow,
 

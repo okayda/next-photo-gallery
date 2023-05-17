@@ -14,6 +14,41 @@
     }
   }
 
+  @include desktop() {
+    picture {
+      height: 65rem;
+      flex-grow: 0.8;
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    &:nth-child(odd) {
+      picture {
+        img {
+          object-position: top;
+        }
+      }
+    }
+
+    &:first-child {
+      position: relative;
+
+      &::before {
+        content: "";
+        height: 38rem;
+        width: 0.6rem;
+        background-image: linear-gradient(#5a77ff, #bc7198, #ffc593);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        z-index: 100;
+      }
+    }
+  }
+
   &:nth-child(even) {
     background-color: $white;
 
@@ -48,6 +83,11 @@
       max-width: 54rem;
     }
 
+    @include desktop() {
+      max-width: 56rem;
+      padding: 0 6.4rem;
+    }
+
     div {
       display: inline-block;
     }
@@ -69,6 +109,10 @@
       @include m-tablet() {
         margin-bottom: 3rem;
       }
+
+      @include desktop() {
+        font-size: 4rem;
+      }
     }
 
     p {
@@ -78,6 +122,10 @@
 
       @include l-mobile {
         margin-bottom: 3.6rem;
+      }
+
+      @include desktop() {
+        font-size: 1.6rem;
       }
     }
 
@@ -95,6 +143,10 @@
       img {
         width: 42px;
         height: 12px;
+      }
+
+      @include desktop() {
+        font-size: 1.3rem;
       }
     }
   }

@@ -8,7 +8,12 @@ const BoxsGrid = function () {
       <div className={classes.boxs__container}>
         {HomeBoxData.map((data) => (
           <article>
-            <img src={data.img} alt={data.title} />
+            <picture>
+              <source srcSet={data.imgDesktop} media="(min-width: 1024px)" />
+
+              <img src={data.imgMobile} alt={data.title} />
+            </picture>
+
             <div className={classes.boxs__wrapper}>
               <div className={classes.boxs__contents}>
                 <a href="#">

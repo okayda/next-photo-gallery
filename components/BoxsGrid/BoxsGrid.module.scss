@@ -12,6 +12,10 @@
       grid-template-columns: 1fr 1fr;
       max-width: none;
     }
+
+    @include desktop() {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
   }
 
   article {
@@ -44,6 +48,10 @@
       font-size: 1.8rem;
       margin-bottom: 0.6rem;
       color: $white;
+
+      @include desktop() {
+        font-size: 1.9rem;
+      }
     }
 
     span {
@@ -51,6 +59,10 @@
       font-size: 1.4rem;
       margin-bottom: 1.8rem;
       display: block;
+
+      @include desktop() {
+        font-size: 1.5rem;
+      }
     }
 
     div {
@@ -66,6 +78,10 @@
         font-size: 1.2rem;
         font-weight: bold;
         letter-spacing: 1px;
+
+        @include desktop() {
+          font-size: 1.25rem;
+        }
       }
 
       img {
