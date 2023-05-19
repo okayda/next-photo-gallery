@@ -10,8 +10,8 @@ import imgMobile3 from "../../../assets/features/designed-for-everyone-mobile.jp
 import imgTablet3 from "../../../assets/features/designed-for-everyone-tablet.jpg";
 import imgDesktop3 from "../../../assets/features/designed-for-everyone.jpg";
 
-import whiteArrow from "../../../assets/arrow-white.svg";
-import blackArrow from "../../../assets/arrow-black.svg";
+import whiteArrow from "../../../assets/shared/arrow-white.svg";
+import blackArrow from "../../../assets/shared/arrow-black.svg";
 
 export const HomeData = [
   {

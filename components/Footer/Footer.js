@@ -1,6 +1,6 @@
 import classes from "./Footer.module.scss";
-import logo from "../../assets/logo-white.svg";
-import whiteArrow from "../../assets/arrow-white.svg";
+import logo from "../../assets/shared/logo-white.svg";
+import whiteArrow from "../../assets/shared/arrow-white.svg";
 import {
   FaFacebookSquare,
   FaYoutubeSquare,

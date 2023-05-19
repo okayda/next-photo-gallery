@@ -1,5 +1,5 @@
 import { RxHamburgerMenu } from "react-icons/rx";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/shared/logo.svg";
 import classes from "./Header.module.scss";
 const Header = function () {
   return (

@@ -1,14 +1,14 @@
-import imgMobile1 from "../../../assets/features/mountains-m.jpg";
-import imgDesktop1 from "../../../assets/features/mountains.jpg";
+import imgMobile1 from "../../../assets/shared/mountains-m.jpg";
+import imgDesktop1 from "../../../assets/shared/mountains.jpg";
 
-import imgMobile2 from "../../../assets/features/cityscapes-m.jpg";
-import imgDesktop2 from "../../../assets/features/cityscapes.jpg";
+import imgMobile2 from "../../../assets/shared/cityscapes-m.jpg";
+import imgDesktop2 from "../../../assets/shared/cityscapes.jpg";
 
-import imgMobile3 from "../../../assets/features/18-days-voyage-m.jpg";
-import imgDesktop3 from "../../../assets/features/18-days-voyage.jpg";
+import imgMobile3 from "../../../assets/shared/18-days-voyage-m.jpg";
+import imgDesktop3 from "../../../assets/shared/18-days-voyage.jpg";
 
-import imgMobile4 from "../../../assets/features/architecturals-m.jpg";
-import imgDesktop4 from "../../../assets/features/architecturals.jpg";
+import imgMobile4 from "../../../assets/shared/architecturals-m.jpg";
+import imgDesktop4 from "../../../assets/shared/architecturals.jpg";
 
 export const HomeGridData = [
   {

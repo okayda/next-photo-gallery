@@ -1,6 +1,6 @@
 import classes from "./HomeGrid.module.scss";
 import { HomeGridData } from "./HomeGridData";
-import whiteArrow from "../../../assets/arrow-white.svg";
+import whiteArrow from "../../../assets/shared/arrow-white.svg";
 
 const HomeGrid = function () {
   return (
