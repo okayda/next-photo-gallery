@@ -1,17 +1,17 @@
-import imgMobile1 from "../../assets/create-and-share-mobile.jpg";
-import imgTablet1 from "../../assets/create-and-share-tablet.jpg";
-import imgDesktop1 from "../../assets/create-and-share.jpg";
+import imgMobile1 from "../../../assets/features/create-and-share-mobile.jpg";
+import imgTablet1 from "../../../assets/features/create-and-share-tablet.jpg";
+import imgDesktop1 from "../../../assets/features/create-and-share.jpg";
 
-import imgMobile2 from "../../assets/beautiful-stories-mobile.jpg";
-import imgTablet2 from "../../assets/beautiful-stories-tablet.jpg";
-import imgDesktop2 from "../../assets/beautiful-stories.jpg";
+import imgMobile2 from "../../../assets/features/beautiful-stories-mobile.jpg";
+import imgTablet2 from "../../../assets/features/beautiful-stories-tablet.jpg";
+import imgDesktop2 from "../../../assets/features/beautiful-stories.jpg";
 
-import imgMobile3 from "../../assets/designed-for-everyone-mobile.jpg";
-import imgTablet3 from "../../assets/designed-for-everyone-tablet.jpg";
-import imgDesktop3 from "../../assets/designed-for-everyone.jpg";
+import imgMobile3 from "../../../assets/features/designed-for-everyone-mobile.jpg";
+import imgTablet3 from "../../../assets/features/designed-for-everyone-tablet.jpg";
+import imgDesktop3 from "../../../assets/features/designed-for-everyone.jpg";
 
-import whiteArrow from "../../assets/arrow-white.svg";
-import blackArrow from "../../assets/arrow-black.svg";
+import whiteArrow from "../../../assets/arrow-white.svg";
+import blackArrow from "../../../assets/arrow-black.svg";
 
 export const HomeData = [
   {

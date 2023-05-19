@@ -1,7 +1,7 @@
 import Head from "next/head";
-import HeroHome from "../components/HeroHome/HeroHome";
-import BoxsGrid from "../components/BoxsGrid/BoxsGrid";
-import HomeFeature from "../components/HomeFeature/HomeFeature";
+import HomeHero from "../components/Home/HomeHero/HomeHero";
+import HomeGrid from "../components/Home/HomeGrid/HomeGrid";
+import HomeFeature from "../components/Home/HomeFeature/HomeFeature";
 
 export default function Home() {
   return (
@@ -13,8 +13,8 @@ export default function Home() {
         />
         <title>Photoshop Gallery</title>
       </Head>
-      <HeroHome />
-      <BoxsGrid />
+      <HomeHero />
+      <HomeGrid />
       <HomeFeature />
     </>
   );

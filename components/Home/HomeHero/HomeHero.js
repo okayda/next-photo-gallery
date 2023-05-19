@@ -1,9 +1,7 @@
-import mobile from "../../assets/create-and-share-mobile.jpg";
-import classes from "./HeroHome.module.scss";
-import arrowR from "../../assets/arrow-white.svg";
+import classes from "./HomeHero.module.scss";
 import { HomeData } from "./homeData";
 
-const HeroHome = function () {
+const HomeHero = function () {
   return (
     <>
       {HomeData.map((data, i) => (
@@ -31,4 +29,4 @@ const HeroHome = function () {
   );
 };
 
-export default HeroHome;
+export default HomeHero;

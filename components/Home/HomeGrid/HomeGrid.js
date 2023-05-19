@@ -1,12 +1,12 @@
-import classes from "./BoxsGrid.module.scss";
-import { HomeBoxData } from "./HomeBoxData";
-import whiteArrow from "../../assets/arrow-white.svg";
+import classes from "./HomeGrid.module.scss";
+import { HomeGridData } from "./HomeGridData";
+import whiteArrow from "../../../assets/arrow-white.svg";
 
-const BoxsGrid = function () {
+const HomeGrid = function () {
   return (
     <section className={classes.boxs}>
       <div className={classes.boxs__container}>
-        {HomeBoxData.map((data) => (
+        {HomeGridData.map((data) => (
           <article>
             <picture>
               <source srcSet={data.imgDesktop} media="(min-width: 1024px)" />
@@ -33,4 +33,4 @@ const BoxsGrid = function () {
   );
 };
 
-export default BoxsGrid;
+export default HomeGrid;
