@@ -10,6 +10,7 @@ const StoriesHero = function () {
   return (
     <section className={classes.stories}>
       <picture>
+        <source srcSet={imgDesktop} media="(min-width: 1024px)" />
         <source srcSet={imgTablet} media="(min-width: 700px)" />
 
         <img src={imgMobile} alt="Mountain View" />
