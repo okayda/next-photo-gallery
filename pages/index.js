@@ -6,6 +6,8 @@ import HomeFeature from "../components/Home/HomeFeature/HomeFeature";
 import StoriesHero from "../components/Stories/StoriesHero/StoriesHero";
 import StoriesGrid from "../components/Stories/StoriesGrid/StoriesGrid";
 
+import FeatureHero from "../components/Feature/FeatureHero/FeatureHero";
+
 export default function Home() {
   return (
     <>
@@ -17,8 +19,7 @@ export default function Home() {
         <title>Photoshop Gallery</title>
       </Head>
 
-      <StoriesHero />
-      <StoriesGrid />
+      <FeatureHero />
     </>
   );
 }

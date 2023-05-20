@@ -1,0 +1,72 @@
+@use "../../../scss/index.scss" as *;
+
+.hero {
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet() {
+    flex-direction: row;
+    align-items: center;
+    height: 65rem;
+
+    picture {
+      height: 100%;
+      width: 100%;
+      order: 2;
+      flex: 0.9;
+
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    padding: 7.2rem 3.3rem;
+    max-width: 55rem;
+    margin: 0 auto;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 0.6rem;
+      background-image: linear-gradient(192deg, #5a77ff, #bc7198, #ffc593);
+      position: absolute;
+      z-index: 50;
+      top: 0;
+      left: 0;
+    }
+
+    @include tablet() {
+      padding: 0 5.4rem;
+      max-width: 42rem;
+
+      &::before {
+        height: 100%;
+        width: 0.6rem;
+        background-image: linear-gradient(#5a77ff, #bc7198, #ffc593);
+      }
+    }
+
+    h2,
+    p {
+      color: $white;
+    }
+
+    h2 {
+      font-size: 3.2rem;
+      text-transform: uppercase;
+      margin-bottom: 1.6rem;
+
+      @include tablet() {
+        font-size: 4rem;
+      }
+    }
+
+    p {
+      line-height: 1.6;
+    }
+  }
+}
