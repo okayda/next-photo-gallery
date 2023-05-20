@@ -4,6 +4,7 @@ import HomeGrid from "../components/Home/HomeGrid/HomeGrid";
 import HomeFeature from "../components/Home/HomeFeature/HomeFeature";
 
 import StoriesHero from "../components/Stories/StoriesHero/StoriesHero";
+import StoriesGrid from "../components/Stories/StoriesGrid/StoriesGrid";
 
 export default function Home() {
   return (
@@ -15,11 +16,9 @@ export default function Home() {
         />
         <title>Photoshop Gallery</title>
       </Head>
-      {/* <HomeHero />
-      <HomeGrid />
-      <HomeFeature /> */}
 
       <StoriesHero />
+      <StoriesGrid />
     </>
   );
 }

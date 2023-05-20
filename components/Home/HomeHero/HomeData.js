@@ -1,14 +1,14 @@
-import imgMobile1 from "../../../assets/features/create-and-share-mobile.jpg";
-import imgTablet1 from "../../../assets/features/create-and-share-tablet.jpg";
-import imgDesktop1 from "../../../assets/features/create-and-share.jpg";
+import imgMobile1 from "../../../assets/home/create-and-share-mobile.jpg";
+import imgTablet1 from "../../../assets/home/create-and-share-tablet.jpg";
+import imgDesktop1 from "../../../assets/home/create-and-share.jpg";
 
-import imgMobile2 from "../../../assets/features/beautiful-stories-mobile.jpg";
-import imgTablet2 from "../../../assets/features/beautiful-stories-tablet.jpg";
-import imgDesktop2 from "../../../assets/features/beautiful-stories.jpg";
+import imgMobile2 from "../../../assets/home/beautiful-stories-mobile.jpg";
+import imgTablet2 from "../../../assets/home/beautiful-stories-tablet.jpg";
+import imgDesktop2 from "../../../assets/home/beautiful-stories.jpg";
 
-import imgMobile3 from "../../../assets/features/designed-for-everyone-mobile.jpg";
-import imgTablet3 from "../../../assets/features/designed-for-everyone-tablet.jpg";
-import imgDesktop3 from "../../../assets/features/designed-for-everyone.jpg";
+import imgMobile3 from "../../../assets/home/designed-for-everyone-mobile.jpg";
+import imgTablet3 from "../../../assets/home/designed-for-everyone-tablet.jpg";
+import imgDesktop3 from "../../../assets/home/designed-for-everyone.jpg";
 
 import whiteArrow from "../../../assets/shared/arrow-white.svg";
 import blackArrow from "../../../assets/shared/arrow-black.svg";
