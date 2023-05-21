@@ -1,0 +1,54 @@
+@use "../../../scss/index.scss" as *;
+
+.feature {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  column-gap: 4.2rem;
+  row-gap: 7.2rem;
+  padding: 10rem 1rem;
+  max-width: 31rem;
+  margin: 0 auto;
+
+  @include tablet() {
+    max-width: 60rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include m-tablet() {
+    max-width: 80rem;
+  }
+
+  @include desktop() {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 140rem;
+    padding: 10rem 2.6rem;
+  }
+
+  div {
+    text-align: center;
+
+    img {
+      width: 7rem;
+      height: 7rem;
+      margin: 0 auto 4rem;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1.8rem;
+
+      @include desktop() {
+        font-size: 1.9rem;
+      }
+    }
+
+    p {
+      color: $opaque-black;
+
+      @include desktop() {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

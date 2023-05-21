@@ -1,6 +1,6 @@
-import img1 from "../../../assets/responsive.svg";
-import img2 from "../../../assets/no-limit.svg";
-import img3 from "../../../assets/embed.svg";
+import img1 from "../../../assets/shared/responsive.svg";
+import img2 from "../../../assets/shared/no-limit.svg";
+import img3 from "../../../assets/shared/embed.svg";
 
 export const HomeFeatureData = [
   {

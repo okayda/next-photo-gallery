@@ -7,6 +7,7 @@ import StoriesHero from "../components/Stories/StoriesHero/StoriesHero";
 import StoriesGrid from "../components/Stories/StoriesGrid/StoriesGrid";
 
 import FeatureHero from "../components/Feature/FeatureHero/FeatureHero";
+import FeatureBoxs from "../components/Feature/FeatureBoxs/FeatureBoxs";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       </Head>
 
       <FeatureHero />
+      <FeatureBoxs />
     </>
   );
 }
