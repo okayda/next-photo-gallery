@@ -29,51 +29,69 @@ const PricingCards = function () {
         </span>
       </div>
 
-      <div className={classes.card__white}>
-        <h3>Basic</h3>
-        <p>
-          Includes basic usage of our platform. Recommended for new and aspiring
-          photographers.
-        </p>
+      <div className={classes.card__cards}>
+        <div className={classes.card__white}>
+          <div className={classes["card__white--wrapper"]}>
+            <div className={classes["card__white--description"]}>
+              <h3>Basic</h3>
+              <p>
+                Includes basic usage of our platform. Recommended for new and
+                aspiring photographers.
+              </p>
+            </div>
 
-        <div className={classes["card__white--pricing"]}>
-          <span className={classes["card__white--price"]}>
-            {checked ? "$190.00" : "$19.00"}
-          </span>
-          <span className={classes["card__white--annum"]}>per month</span>
+            <div className={classes["card__white--pricing"]}>
+              <span className={classes["card__white--price"]}>
+                {checked ? "$190.00" : "$19.00"}
+              </span>
+              <span className={classes["card__white--annum"]}>per month</span>
+            </div>
+
+            <button>pick plan</button>
+          </div>
         </div>
 
-        <button>pick plan</button>
-      </div>
+        <div className={classes.card__black}>
+          <div className={classes["card__white--wrapper"]}>
+            <div className={classes["card__white--description"]}>
+              <h3>Pro</h3>
+              <p>
+                More advanced features available. Recommended for photography
+                veterans and professionals.
+              </p>
+            </div>
 
-      <div className={classes.card__black}>
-        <h3>Pro</h3>
-        <p>
-          More advanced features available. Recommended for photography veterans
-          and professionals.
-        </p>
-        <div className={classes["card__white--pricing"]}>
-          <span className={classes["card__white--price"]}>
-            {checked ? "$390.00" : "$39.00"}
-          </span>
-          <span className={classes["card__white--annum"]}>per month</span>
-        </div>
-        <button>pick plan</button>
-      </div>
+            <div className={classes["card__white--pricing"]}>
+              <span className={classes["card__white--price"]}>
+                {checked ? "$390.00" : "$39.00"}
+              </span>
+              <span className={classes["card__white--annum"]}>per month</span>
+            </div>
 
-      <div className={classes.card__white}>
-        <h3>Business</h3>
-        <p>
-          Additional features available such as more detailed metrics.
-          Recommended for business owners
-        </p>
-        <div className={classes["card__white--pricing"]}>
-          <span className={classes["card__white--price"]}>
-            {checked ? "$990.00" : "$99.00"}
-          </span>
-          <span className={classes["card__white--annum"]}>per month</span>
+            <button>pick plan</button>
+          </div>
         </div>
-        <button>pick plan</button>
+
+        <div className={classes.card__white}>
+          <div className={classes["card__white--wrapper"]}>
+            <div className={classes["card__white--description"]}>
+              <h3>Business</h3>
+              <p>
+                Additional features available such as more detailed metrics.
+                Recommended for business owners.
+              </p>
+            </div>
+
+            <div className={classes["card__white--pricing"]}>
+              <span className={classes["card__white--price"]}>
+                {checked ? "$990.00" : "$99.00"}
+              </span>
+              <span className={classes["card__white--annum"]}>per month</span>
+            </div>
+
+            <button>pick plan</button>
+          </div>
+        </div>
       </div>
     </section>
   );
