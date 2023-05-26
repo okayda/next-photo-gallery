@@ -1,0 +1,58 @@
+@use "../../../scss/index.scss" as *;
+
+.table {
+  display: none;
+
+  @include l-mobile() {
+    display: block;
+  }
+
+  width: 100%;
+  border-collapse: collapse;
+
+  th {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+
+    &:first-child {
+      text-align: left;
+      width: 30%;
+    }
+
+    &:not(:first-child) {
+      text-align: center;
+      width: 20%;
+    }
+  }
+
+  thead {
+    th {
+      font-size: 1.25rem;
+    }
+
+    tr {
+      height: 6rem;
+      border-bottom: 1px solid $black;
+    }
+  }
+
+  tbody {
+    tr {
+      height: 6rem;
+      border-bottom: 1px solid $light-grey;
+    }
+
+    td {
+      width: 20%;
+      text-align: center;
+
+      img {
+        height: 15px;
+        width: 18px;
+        object-fit: fill;
+        display: inline-block;
+      }
+    }
+  }
+}

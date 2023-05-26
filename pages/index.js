@@ -11,6 +11,7 @@ import FeatureBoxs from "../components/Feature/FeatureBoxs/FeatureBoxs";
 
 import PricingHero from "../components/Pricing/PricingHero/PricingHero";
 import PricingCards from "../components/Pricing/PricingCards/PricingCards";
+import PricingTable from "../components/Pricing/PricingTable/PricingTable";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
 
       <PricingHero />
       <PricingCards />
+      <PricingTable />
     </>
   );
 }
