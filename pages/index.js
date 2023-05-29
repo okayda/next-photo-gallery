@@ -25,9 +25,13 @@ export default function Home() {
         <title>Photoshop Gallery</title>
       </Head>
 
-      <PricingHero />
+      {/* <PricingHero />
       <PricingCards />
-      <PricingTable />
+      <PricingTable /> */}
+
+      {/* <FeatureHero />
+      <FeatureBoxs /> */}
+
       <Banner />
     </>
   );

@@ -7,21 +7,21 @@
 
 @mixin tablet() {
   // 700px
-  @media only screen and (min-width: 700px) {
+  @media only screen and (min-width: 43.75em) {
     @content;
   }
 }
 
 @mixin m-tablet() {
   // 840px
-  @media only screen and (min-width: 840px) {
+  @media only screen and (min-width: 52.5em) {
     @content;
   }
 }
 
 @mixin desktop() {
   // 1024px
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 64em) {
     @content;
   }
 }

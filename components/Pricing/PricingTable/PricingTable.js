@@ -1,5 +1,4 @@
 import classes from "./PricingTable.module.scss";
-
 import MobileTable from "./MobileTable";
 import DesktopTable from "./DesktopTable";
 
