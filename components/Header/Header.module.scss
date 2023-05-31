@@ -94,6 +94,15 @@
     a:visited {
       color: $black;
     }
+
+    a:hover,
+    a:active {
+      color: $light-grey;
+    }
+
+    &--active {
+      color: $light-grey !important;
+    }
   }
 
   &__invite {
@@ -106,6 +115,12 @@
       display: block;
       padding: 1rem 2rem;
       text-align: center;
+    }
+
+    a:hover,
+    a:active {
+      background-color: $light-grey;
+      color: $black;
     }
 
     @include desktop() {

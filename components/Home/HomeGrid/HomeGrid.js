@@ -6,8 +6,8 @@ const HomeGrid = function () {
   return (
     <section className={classes.boxs}>
       <div className={classes.boxs__container}>
-        {HomeGridData.map((data) => (
-          <article>
+        {HomeGridData.map((data, i) => (
+          <article key={i}>
             <picture>
               <source srcSet={data.imgDesktop} media="(min-width: 1024px)" />
 

@@ -96,6 +96,11 @@ a:visited {
   text-decoration: none;
 }
 
+a:hover,
+a:active {
+  transition: 0.3s;
+}
+
 #root,
 #__next {
   isolation: isolate;

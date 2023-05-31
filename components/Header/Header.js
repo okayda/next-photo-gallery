@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { GrClose } from "react-icons/gr";
@@ -8,6 +11,7 @@ import classes from "./Header.module.scss";
 
 const Header = function () {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   const menuHandler = function () {
     setOpen((prev) => !prev);
@@ -17,7 +21,9 @@ const Header = function () {
     <header className={`${classes.header} ${!open ? "" : classes.active}`}>
       <div className={classes.header__container}>
         <div className={classes.header__btn}>
-          <img src={logo} alt="Logo" />
+          <Link href="/">
+            <img src={logo} alt="Logo" />
+          </Link>
 
           <button onClick={menuHandler}>
             {!open ? <RxHamburgerMenu /> : <GrClose />}
@@ -27,28 +33,62 @@ const Header = function () {
         <nav className={classes.header__links}>
           <ul>
             <li>
-              <a href="#">home</a>
+              <Link
+                href="/"
+                className={
+                  pathname === "/" ? classes["header__links--active"] : ""
+                }
+              >
+                home
+              </Link>
             </li>
             <li>
-              <a href="#">stories</a>
+              <Link
+                href="/stories"
+                className={
+                  pathname === "/stories"
+                    ? classes["header__links--active"]
+                    : ""
+                }
+              >
+                stories
+              </Link>
             </li>
             <li>
-              <a href="#">features</a>
+              <Link
+                href="features"
+                className={
+                  pathname === "/features"
+                    ? classes["header__links--active"]
+                    : ""
+                }
+              >
+                features
+              </Link>
             </li>
             <li>
-              <a href="#">pricing</a>
+              <Link
+                href="pricing"
+                className={
+                  pathname === "/pricing"
+                    ? classes["header__links--active"]
+                    : ""
+                }
+              >
+                pricing
+              </Link>
             </li>
           </ul>
         </nav>
 
         <div className={classes.header__invite}>
-          <a href="#">get an invite</a>
+          <Link href="/">get an invite</Link>
         </div>
 
         <div className={classes.header__plus}>
-          <a href="#">
+          <Link href="/">
             <BsPlusSquareFill />
-          </a>
+          </Link>
         </div>
       </div>
     </header>
