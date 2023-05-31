@@ -1,3 +1,4 @@
+import Link from "next/link";
 import classes from "./StoriesGrid.module.scss";
 import { StoriesGridData } from "./StoriesGridData";
 import whiteArrow from "../../../assets/shared/arrow-white.svg";
@@ -8,15 +9,15 @@ const StoriesGrid = function () {
       <div className={classes.grid__container}>
         {StoriesGridData.map((data) => (
           <article>
-            <picture>
-              <source srcSet={data.imgDesktop} media="(min-width: 1024px)" />
+            <Link href="/">
+              <picture>
+                <source srcSet={data.imgDesktop} media="(min-width: 1024px)" />
 
-              <img src={data.imgMobile} alt={data.title} />
-            </picture>
+                <img src={data.imgMobile} alt={data.title} />
+              </picture>
 
-            <div className={classes.grid__wrapper}>
-              <div className={classes.grid__contents}>
-                <a href="#">
+              <div className={classes.grid__wrapper}>
+                <div className={classes.grid__contents}>
                   <span className={classes["grid__contents--date"]}>
                     {data.date}
                   </span>
@@ -28,9 +29,9 @@ const StoriesGrid = function () {
                     <span>read story</span>
                     <img src={whiteArrow} alt="" />
                   </div>
-                </a>
+                </div>
               </div>
-            </div>
+            </Link>
           </article>
         ))}
       </div>

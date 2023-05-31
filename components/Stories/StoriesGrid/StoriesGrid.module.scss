@@ -20,6 +20,7 @@
 
   article {
     position: relative;
+    @include card-hover();
   }
 
   &__wrapper {

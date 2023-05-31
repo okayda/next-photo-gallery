@@ -99,11 +99,21 @@
         text-transform: uppercase;
         letter-spacing: 2px;
         font-weight: bold;
+
+        img {
+          transition: 0.3s;
+          width: 43px;
+          height: 18px;
+        }
       }
 
-      img {
-        width: 43px;
-        height: 18px;
+      a:hover,
+      a:active {
+        box-shadow: 0 1.5px 0px 0px $white;
+
+        img {
+          margin-left: 8px;
+        }
       }
     }
   }
