@@ -92,13 +92,9 @@ p {
 
 a:link,
 a:visited {
+  transition: 0.3s;
   font-size: 1.2rem;
   text-decoration: none;
-}
-
-a:hover,
-a:active {
-  transition: 0.3s;
 }
 
 #root,

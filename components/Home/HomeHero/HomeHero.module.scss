@@ -7,16 +7,8 @@
     & .hero__content {
       position: relative;
 
-      &::before {
-        content: "";
-        width: 100%;
-        height: 0.4rem;
-        background-image: linear-gradient(192deg, #5a77ff, #bc7198, #ffc593);
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 50;
-      }
+      // Top line
+      @include mobile-gradient();
     }
   }
 
@@ -162,11 +154,7 @@
       gap: 12px;
       padding-bottom: 2px;
 
-      img {
-        transition: 0.3s;
-        width: 42px;
-        height: 12px;
-      }
+      @include arrow-svg();
 
       @include desktop() {
         font-size: 1.3rem;

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import ReactSwitch from "react-switch";
 import classes from "./PricingCards.module.scss";
@@ -47,7 +48,7 @@ const PricingCards = function () {
               <span className={classes["card__white--annum"]}>per month</span>
             </div>
 
-            <button>pick plan</button>
+            <Link href="/">pick plan</Link>
           </div>
         </div>
 
@@ -68,7 +69,7 @@ const PricingCards = function () {
               <span className={classes["card__white--annum"]}>per month</span>
             </div>
 
-            <button>pick plan</button>
+            <Link href="/">pick plan</Link>
           </div>
         </div>
 
@@ -89,7 +90,7 @@ const PricingCards = function () {
               <span className={classes["card__white--annum"]}>per month</span>
             </div>
 
-            <button>pick plan</button>
+            <Link href="/">pick plan</Link>
           </div>
         </div>
       </div>

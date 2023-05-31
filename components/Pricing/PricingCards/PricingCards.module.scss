@@ -91,14 +91,14 @@
       font-size: 1.5rem;
     }
 
-    button {
-      width: 100%;
+    a:link,
+    a:visited {
+      display: block;
       padding: 1.2rem 0;
       font-size: 1.2rem;
       text-transform: uppercase;
       letter-spacing: 2px;
       font-weight: bold;
-      height: 40px;
     }
   }
 
@@ -113,9 +113,16 @@
       color: $opaque-black;
     }
 
-    button {
+    a:link,
+    a:visited {
       background-color: $black;
       color: $white;
+    }
+
+    a:hover,
+    a:active {
+      background-color: lighten($black, 80%);
+      color: $black;
     }
   }
 
@@ -152,9 +159,16 @@
       color: $opaque-grey;
     }
 
-    button {
+    a:link,
+    a:visited {
       background-color: $white;
       color: $black;
+    }
+
+    a:hover,
+    a:active {
+      background-color: darken($white, 75%);
+      color: $white;
     }
   }
 }

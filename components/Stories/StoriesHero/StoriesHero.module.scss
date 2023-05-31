@@ -96,15 +96,12 @@
       a:visited {
         display: flex;
         gap: 18px;
+        align-items: center;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-weight: bold;
 
-        img {
-          transition: 0.3s;
-          width: 43px;
-          height: 18px;
-        }
+        @include arrow-svg();
       }
 
       a:hover,
