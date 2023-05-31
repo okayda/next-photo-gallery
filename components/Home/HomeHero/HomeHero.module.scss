@@ -80,6 +80,11 @@
     a:visited {
       color: $black;
     }
+
+    a:hover,
+    a:active {
+      box-shadow: 0 1.5px 0px 0px $black;
+    }
   }
 
   &__content {
@@ -155,14 +160,26 @@
       display: flex;
       align-items: center;
       gap: 12px;
+      padding-bottom: 2px;
 
       img {
         width: 42px;
         height: 12px;
+        transition: 0.3s;
       }
 
       @include desktop() {
         font-size: 1.3rem;
+      }
+    }
+
+    a:hover,
+    a:active {
+      box-shadow: 0 1.5px 0px 0px $white;
+      transition: 0.4s;
+
+      img {
+        margin-left: 8px;
       }
     }
   }
