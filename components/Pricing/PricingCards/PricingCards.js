@@ -48,7 +48,7 @@ const PricingCards = function () {
               <span className={classes["card__white--annum"]}>per month</span>
             </div>
 
-            <Link href="/">pick plan</Link>
+            <Link href="#">pick plan</Link>
           </div>
         </div>
 
@@ -69,7 +69,7 @@ const PricingCards = function () {
               <span className={classes["card__white--annum"]}>per month</span>
             </div>
 
-            <Link href="/">pick plan</Link>
+            <Link href="#">pick plan</Link>
           </div>
         </div>
 
@@ -90,7 +90,7 @@ const PricingCards = function () {
               <span className={classes["card__white--annum"]}>per month</span>
             </div>
 
-            <Link href="/">pick plan</Link>
+            <Link href="#">pick plan</Link>
           </div>
         </div>
       </div>

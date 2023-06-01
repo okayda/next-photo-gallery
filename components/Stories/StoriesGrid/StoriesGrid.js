@@ -7,13 +7,19 @@ const StoriesGrid = function () {
   return (
     <section className={classes.grid}>
       <div className={classes.grid__container}>
-        {StoriesGridData.map((data) => (
-          <article>
-            <Link href="/">
+        {StoriesGridData.map((data, i) => (
+          <article key={i}>
+            <Link href="#">
               <picture>
                 <source srcSet={data.imgDesktop} media="(min-width: 1024px)" />
 
-                <img src={data.imgMobile} alt={data.title} />
+                <img
+                  src={data.imgMobile}
+                  alt={data.title}
+                  loading="lazy"
+                  width="400"
+                  height="400"
+                />
               </picture>
 
               <div className={classes.grid__wrapper}>

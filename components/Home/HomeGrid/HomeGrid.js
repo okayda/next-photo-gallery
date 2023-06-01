@@ -9,11 +9,17 @@ const HomeGrid = function () {
       <div className={classes.boxs__container}>
         {HomeGridData.map((data, i) => (
           <article key={i}>
-            <Link href="/">
+            <Link href="#">
               <picture>
                 <source srcSet={data.imgDesktop} media="(min-width: 1024px)" />
 
-                <img src={data.imgMobile} alt={data.title} />
+                <img
+                  src={data.imgMobile}
+                  alt={data.title}
+                  loading="lazy"
+                  width="400"
+                  height="400"
+                />
               </picture>
 
               <div className={classes.boxs__wrapper}>
