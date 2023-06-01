@@ -59,9 +59,17 @@
       margin-bottom: 0;
     }
 
-    svg {
-      width: 2.4rem;
-      height: 2.4rem;
+    a:link,
+    a:visited {
+      svg {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+    }
+
+    a:hover,
+    a:active {
+      opacity: 0.4;
     }
   }
 
@@ -78,6 +86,15 @@
       text-transform: uppercase;
       font-weight: bold;
       letter-spacing: 1.5px;
+    }
+
+    a:hover,
+    a:active {
+      @include text-gradient();
+    }
+
+    &--active {
+      @include text-gradient();
     }
 
     @include tablet() {
@@ -128,10 +145,18 @@
         font-size: 1.25rem;
       }
     }
+
+    a:hover,
+    a:active {
+      box-shadow: 0 1.5px 0px 0px $white;
+    }
   }
 
-  p {
-    color: $opaque-grey;
+  &__copyright:link,
+  &__copyright:visited {
+    font-size: 1.6rem;
+
+    @include text-gradient();
 
     @include tablet() {
       text-align: left;

@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
 import classes from "./Footer.module.scss";
 import logo from "../../assets/shared/logo-white.svg";
 import whiteArrow from "../../assets/shared/arrow-white.svg";
@@ -10,55 +13,85 @@ import {
 } from "react-icons/fa";
 
 const Footer = function () {
+  const pathname = usePathname();
+
   return (
     <footer className={classes.footer}>
       <div className={classes.footer__wrapper}>
         <div className={classes.footer__logo}>
-          <a href="#">
+          <Link href="/">
             <img src={logo} alt="Logo" />
-          </a>
+          </Link>
         </div>
 
         <ul className={classes.footer__socials}>
           <li>
-            <a href="#">
+            <Link href="https://www.facebook.com/Jhomarno" target="_blank">
               <FaFacebookSquare />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link href="#">
               <FaYoutubeSquare />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link href="#">
               <FaTwitterSquare />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link href="#">
               <FaPinterestSquare />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link href="#">
               <FaInstagramSquare />
-            </a>
+            </Link>
           </li>
         </ul>
 
         <ul className={classes.footer__sites}>
           <li>
-            <a href="#">home</a>
+            <Link
+              href="/"
+              className={
+                pathname === "/" ? classes["footer__sites--active"] : ""
+              }
+            >
+              home
+            </Link>
           </li>
           <li>
-            <a href="#">stories</a>
+            <Link
+              href="/stories"
+              className={
+                pathname === "/stories" ? classes["footer__sites--active"] : ""
+              }
+            >
+              stories
+            </Link>
           </li>
           <li>
-            <a href="#">features</a>
+            <a
+              href="/features"
+              className={
+                pathname === "/features" ? classes["footer__sites--active"] : ""
+              }
+            >
+              features
+            </a>
           </li>
           <li>
-            <a href="#">pricing</a>
+            <a
+              href="/pricing"
+              className={
+                pathname === "/pricing" ? classes["footer__sites--active"] : ""
+              }
+            >
+              pricing
+            </a>
           </li>
         </ul>
 
@@ -71,7 +104,13 @@ const Footer = function () {
           </div>
         </div>
 
-        <p>Copyright 2020. All Rights Reserved</p>
+        <Link
+          href="https://jhon-quenano-portfolio.vercel.app"
+          className={classes.footer__copyright}
+          target="_blank"
+        >
+          2023 Created by Jhon Queñano
+        </Link>
       </div>
     </footer>
   );

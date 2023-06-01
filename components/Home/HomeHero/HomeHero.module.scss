@@ -7,6 +7,10 @@
     & .hero__content {
       position: relative;
 
+      h1 {
+        @include text-gradient();
+      }
+
       // Top line
       @include mobile-gradient();
     }

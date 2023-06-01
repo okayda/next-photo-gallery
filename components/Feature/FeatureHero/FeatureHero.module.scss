@@ -52,6 +52,8 @@
       text-transform: uppercase;
       margin-bottom: 1.6rem;
 
+      @include text-gradient();
+
       @include tablet() {
         font-size: 4rem;
       }
