@@ -34,6 +34,45 @@
   }
 }
 
+// Gradient animation
+@keyframes Xline {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Yline {
+  0% {
+    background-position: 50% 0%;
+  }
+
+  50% {
+    background-position: 0% 100%;
+  }
+
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+@mixin Xline-gradient-animation() {
+  background-size: 300% 100%;
+  animation: Xline 3s ease infinite;
+}
+
+@mixin Yline-gradient-animation() {
+  background-size: 100% 300%;
+  animation: Yline 3s ease infinite;
+}
+
 // horizontal line TOP
 @mixin mobile-gradient() {
   &::before {
@@ -45,6 +84,12 @@
     top: 0;
     left: 0;
     z-index: 50;
+
+    @include Xline-gradient-animation();
+
+    @include desktop() {
+      @include Yline-gradient-animation();
+    }
   }
 }
 
@@ -69,6 +114,8 @@
       height: 6px;
       background-image: linear-gradient(150deg, #5a77ff, #bc7198, #ffc593);
       z-index: 50;
+
+      @include Xline-gradient-animation();
     }
   }
 }

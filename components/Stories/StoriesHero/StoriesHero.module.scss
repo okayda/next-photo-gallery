@@ -42,7 +42,7 @@
 
     @include tablet() {
       z-index: 10;
-      max-width: 50rem;
+      max-width: 52rem;
       margin: 0;
       padding-left: 5.4rem;
     }
@@ -82,6 +82,11 @@
     p {
       color: $opaque-grey;
       margin-bottom: 2.4rem;
+      line-height: 1.6;
+
+      @include desktop() {
+        font-size: 1.6rem;
+      }
     }
 
     &--link {

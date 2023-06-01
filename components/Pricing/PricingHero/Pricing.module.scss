@@ -59,6 +59,10 @@
 
     p {
       line-height: 1.6;
+
+      @include desktop() {
+        font-size: 1.6rem;
+      }
     }
   }
 }

@@ -6,12 +6,14 @@
 
   &::before {
     content: "";
-    width: 6px;
+    width: 0.6rem;
     height: 100%;
     background-image: linear-gradient(#5a77ff, #bc7198, #ffc593);
     position: absolute;
     top: 0;
     left: 0;
+
+    @include Yline-gradient-animation();
   }
 
   picture {
