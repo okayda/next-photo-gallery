@@ -45,6 +45,8 @@
     margin: 0 auto;
     text-align: center;
     padding: 4rem;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+      rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 
     @include l-mobile() {
       max-width: 64rem;
