@@ -1,5 +1,5 @@
 import classes from "./HomeHero.module.scss";
-import { HomeData } from "./homeData";
+import { HomeData } from "./HomeData";
 
 const HomeHero = function () {
   return (
