@@ -26,7 +26,7 @@ const Footer = function () {
 
         <ul className={classes.footer__socials}>
           <li>
-            <Link href="https://www.facebook.com/Jhomarno" target="_blank">
+            <Link href="#">
               <FaFacebookSquare />
             </Link>
           </li>
@@ -104,13 +104,7 @@ const Footer = function () {
           </div>
         </div>
 
-        <Link
-          href="https://jhon-quenano-portfolio.vercel.app"
-          className={classes.footer__copyright}
-          target="_blank"
-        >
-          2023 Created by Jhon Queñano
-        </Link>
+        <p>2023 Created by Jhon Queñano</p>
       </div>
     </footer>
   );

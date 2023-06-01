@@ -153,8 +153,7 @@
     }
   }
 
-  &__copyright:link,
-  &__copyright:visited {
+  p {
     font-size: 1.6rem;
 
     @include text-gradient();
